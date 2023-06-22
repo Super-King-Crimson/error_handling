@@ -3,6 +3,7 @@ mod panic;
 mod result;
 
 fn main() -> Result<(), Box <dyn std::error::Error>> {
+    topic::introduce();
     panic::explain();
     result::explain();
 
